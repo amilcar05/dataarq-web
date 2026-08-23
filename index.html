@@ -1,6 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>DataArq</title>
+  <!-- Estilos CSS (simplificados) -->
+  <style>
+    :root {
+      --navy: #0b1f3a;
+      --on-navy-dim: #9fb9cf;
+      --cyan: #3fe0d1;
+      /* ... otras variables ... */
+    }
 
+    .nav-links a {
+      color: var(--on-navy-dim);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: .82rem;
+      text-transform: uppercase;
+      transition: color .2s ease;
+    }
 
-Index · HTML
+    /* El botón de contacto que modificamos */
+    .nav-cta {
+      font-family: var(--font-mono);
+      font-size: .78rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000; /* Lo cambiamos a negro */
+      background: var(--cyan);
+      padding: .55rem 1rem;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <nav class="nav">
+      <a href="/" class="brand">
+        <!-- Logo SVG -->
+        <span>DataArq</span>
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+      
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+ 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -137,13 +190,16 @@ Index · HTML
     transition:color .2s ease;
   }
   .nav-links a:hover{ color:var(--cyan); }
-  .nav-cta{
-    font-family:var(--font-mono); font-size:.78rem; letter-spacing:.04em;
-    text-transform:uppercase; text-decoration:none;
-    color:#000000; background:var(--cyan);
-    padding:.55rem 1rem; border-radius:2px;
-    transition:filter .2s ease;
-  }
+  .nav-cta {
+      font-family: var(--font-mono);
+      font-size: .78rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000; /* Lo cambiamos a negro */
+      background: var(--cyan);
+      padding: .55rem 1rem;
+      border-radius: 2px;
+    }
   .nav-cta:hover{ filter:brightness(1.08); }
   .nav-toggle{
     display:none; background:none; border:0; color:var(--on-navy);
